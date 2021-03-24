@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <style>
+        body {
+            background-image: radial-gradient(circle, #818181, #333333, #111111);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-origin: content-box;
+            background-position: center ;
+
+        }
+        .sidenav{
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-image: radial-gradient(circle, #818181, #333333, #111111);
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidenav a {
+            text-shadow: 2px 2px 4px #000000;
+              padding: 6px 8px 6px 16px;
+              text-decoration: none;
+              font-size: 20px;
+              color: #818181;
+              display: inline-block;
+}
+        .central_text{
+            color: #cccccc;
+            font-size: 25px;
+            background-image:  radial-gradient(circle, #818181, #333333, #111111);
+            text-align: center;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            body {padding: 85%;}
+            .header {padding-top: 15px;}
+        }
+
+
+}
+
+        .form{
+            color: azure;
+            border: aqua;
+        }
+        .input{
+                padding-bottom:;
+                width: 100%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+        }
+        .form{
+            text-align: center;
+            font-size: 50px;
+        }
+        .submit_button {
+              background-image: radial-gradient(circle, #818181, #333333, #111111);
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+}
+        ::-webkit-input-placeholder{
+            text-align: center;
+        }
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+
+@media screen and (max-width: 600px) {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+}
+        .big_circle {
+              box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+            background-image: radial-gradient(circle, #818181, #333333, #111111);
+              width: 600px;
+              height: 600px;
+              margin: 50px auto;
+              position:relative;
+              border-radius: 400px;
+              border: solid 2px #333333;
+            bottom:50px;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        .big_circle:hover {
+            animation: none;
+        }
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 30px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+  }
+}
+
+        .body {
+  margin:0;
+  background-color: #f79e7d;
+}
+.outer {
+    box-shadow: 2px 2px 4px #000000;
+  width: 220px;
+  height: 220px;
+  margin: 6px auto;
+  position:relative;
+  border-radius: 110px;
+  border: solid 1px #ffffff;
+}
+.mask {
+    color: #ff4da6;
+  position:absolute;
+  top: 55px;
+  width: 220px;
+  height: 110px;
+  overflow: hidden;
+	/* Firefox */
+	-moz-transition: all 0.6s ease;
+	/* WebKit */
+	-webkit-transition: all 0.6s ease;
+	/* Opera */
+	-o-transition: all 0.6s ease;
+	/* Standard */
+	transition: all 0.6s ease;
+}
+.outer:hover .mask {
+transform:rotate(270deg);
+-ms-transform:rotate(270deg); /* IE 9 */
+-webkit-transform:rotate(270deg);
+height: 220px;
+    top:0px;
+color: #e60073;
+}
+.Features{
+    text-shadow: 2px 2px 4px #000000;
+    color: #818181;
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    z-index: 1;
+}
+.ring {
+  position: absolute;
+  top:-55px;
+  width: 200px;
+  height: 200px;
+  border: solid 10px #ffffff;
+  border-radius: 120px;
+
+	/* Firefox */
+	-moz-transition: all 0.6s ease;
+	/* WebKit */
+	-webkit-transition: all 0.6s ease;
+	/* Opera */
+	-o-transition: all 0.6s ease;
+	/* Standard */
+	transition: all 0.6s ease;
+}
+
+.outer:hover .ring {
+  top: 0px;
+    color: #818181;
+}
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;
+  background-color: rgb(25,25,25);
+}
+.line-1{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+    font-size: 20px;
+  animation: typewriter 4s steps(66) 1s 1 normal both,
+             blinkTextCursor 500ms steps(66) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 46%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    </style>
+<body>
+    <div class = "sidenav">
+        <a href="#AMAZOZ AWS">AMAZON-AWS</a>
+        <a href="#HADOOP">HADOOP</a>
+        <a href="#DOCKER">DOCKER</a>
+        <a href="#MANUAL-COMMANDS">MANUAL-COMMANDS</a>
+        <a href="#LVM">LOGICAL VOLUME MANAGMENT</a>
+    </div>
+    <div class="main">
+        <div>
+            <h1 class="central_text">Hybrid Automation Technology {{ cname }}</h1>
+        </div>
+        <div>
+            <p class="line-1 anim-typewriter">Note:- type Chat to start canvo with community members</p>
+        </div>
+
+        <div class="big_circle">
+                <div class="outer" >
+                    <h1 class="Features" >Amazon AWS</h1>
+                    <div class="mask">
+                        <div class="ring"></div>
+                    </div>
+                </div>
+            <form method='get' class="form" action="tech.html">
+                <input  type="text" name="command" placeholder="Enter Your Command" class="input"><input type="submit" class="submit_button">
+            </form>
+                <div class="outer">
+                    <h1 class="Features">Friend Circle</h1>
+                    <div class="mask">
+                        <div class="ring"></div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+<script>
+    function myFunction(){
+        var x =document.getElementById("myTopnav");
+        if(x.className === "topnav"){
+            x.className += "resposive";
+        }
+        else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>

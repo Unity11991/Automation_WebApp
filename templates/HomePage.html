@@ -8,9 +8,10 @@
     <style>
         body {
             background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-            background-image: url({{ url_for('static', filename='builtin/ss.jpg') }})
+            background-attachment: fixed;
+            background-origin: content-box;
+            background-position: center ;
+            background-image: url({{ url_for('static', filename='builtin/ss1.jpg') }})
         }
         .sidenav{
             height: 100%;
